@@ -1,5 +1,4 @@
 <div class="pull-left image">
-    <!-- img src="{{ Gravatar::get($user->email) }}" class="img-circle" alt="User Image" /-->
     <img src="https://avatars3.githubusercontent.com/u/1444526?s=460&v=4" class="img-circle" alt="User Image" />
 </div>
 <div class="pull-left info">
