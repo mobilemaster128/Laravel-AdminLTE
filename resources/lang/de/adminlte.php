@@ -19,4 +19,5 @@ return [
     'password_reset_message'      => 'Bitte geben Sie Ihre E-Mail Adresse ein, um Ihr Passwort zurückzusetzen',
     'reset_password'              => 'Passwort zurücksetzen',
     'send_password_reset_link'    => 'Link zur Passwortwiederherstellung senden',
+    'online'                      => 'Online',
 ];

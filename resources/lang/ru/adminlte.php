@@ -19,5 +19,6 @@ return [
     'password_reset_message'      => 'Восстановление пароля',
     'reset_password'              => 'Восстановление пароля',
     'send_password_reset_link'    => 'Отправить ссылку для восстановления пароля',
+    'online'                      => 'Онлайн',
 
 ];

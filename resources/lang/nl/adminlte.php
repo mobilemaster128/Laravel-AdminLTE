@@ -19,4 +19,5 @@ return [
     'password_reset_message'      => 'Wachtwoord herstellen',
     'reset_password'              => 'Wachtwoord herstellen',
     'send_password_reset_link'    => 'Verzend link voor wachtwoordherstel',
+    'online'                      => 'Online',
 ];
