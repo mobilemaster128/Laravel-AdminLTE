@@ -324,11 +324,11 @@ To override this behavior, you can specify an `active` parameter with an array o
 
 ### 5.2 Plugins
 
-By default the [DataTables](https://datatables.net/) plugin is supported. If set to `true`, the necessary javascript CDN script tags will automatically be injected into the `adminlte::page.blade` file.
+By default the [DataTables](https://datatables.net/) plugin is supported. If set to `bootstrap`, the necessary javascript CDN script tags will automatically be injected into the `adminlte::page.blade` file.
 
 ```php
 'plugins' => [
-    'datatables' => true,
+    'datatables' => 'bootstrap', //'datatables', 'none'
 ]
 ```
 
