@@ -91,10 +91,12 @@
             <!-- sidebar: style can be found in sidebar.less -->
             <section class="sidebar">
 
+                @auth
                 <!-- User Panel -->
                 <ul class="user-panel">
                     @include('adminlte::partials.menu-user-panel')
                 </ul>
+                @endauth
 
                 <!-- Sidebar Menu -->
                 <ul class="sidebar-menu" data-widget="tree">

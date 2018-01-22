@@ -217,7 +217,7 @@ return [
     */
 
     'plugins' => [
-        'datatables' => true,
+        'datatables' => 'bootstrap', //'datatables', 'none'
         'select2'    => true,
         'chartjs'    => true,
     ],

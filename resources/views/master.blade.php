@@ -23,7 +23,10 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('vendor/adminlte/dist/css/AdminLTE.min.css') }}">
 
-    @if(config('adminlte.plugins.datatables'))
+    @if(config('adminlte.plugins.datatables') == 'bootstrape')
+        <!-- Bootstrap 3 -->
+        <link rel="stylesheet" href="//cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
+    @elseif(config('adminlte.plugins.datatables') == 'datatables')
         <!-- DataTables -->
         <link rel="stylesheet" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
     @endif
@@ -50,9 +53,13 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 @endif
 
-@if(config('adminlte.plugins.datatables'))
+@if(config('adminlte.plugins.datatables') == 'bootstrape')
+    <!-- Bootstrap 3 -->
+    <script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+@elseif(config('adminlte.plugins.datatables') == 'datatables')
     <!-- DataTables -->
-    <script src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 @endif
 
 @if(config('adminlte.plugins.chartjs'))
