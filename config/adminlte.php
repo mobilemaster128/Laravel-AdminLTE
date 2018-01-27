@@ -107,6 +107,8 @@ return [
     |
     */
 
+    'avatar_key' => null, // 'avatar'
+
     'menu' => [
         'MAIN NAVIGATION',
         [

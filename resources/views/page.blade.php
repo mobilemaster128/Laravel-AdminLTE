@@ -92,10 +92,12 @@
             <section class="sidebar">
 
                 @auth
+                @if(config('adminlte.avatar_key') != null)
                 <!-- User Panel -->
                 <ul class="user-panel">
                     @include('adminlte::partials.menu-user-panel')
                 </ul>
+                @endif
                 @endauth
 
                 <!-- Sidebar Menu -->
