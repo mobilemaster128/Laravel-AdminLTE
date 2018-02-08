@@ -94,9 +94,9 @@
                 @auth
                 @if(config('adminlte.avatar_key') != null)
                 <!-- User Panel -->
-                <ul class="user-panel">
+                <div class="user-panel">
                     @include('adminlte::partials.menu-user-panel')
-                </ul>
+                </div>
                 @endif
                 @endauth
 
