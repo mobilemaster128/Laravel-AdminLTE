@@ -214,7 +214,6 @@ return [
 	*/
 	'footer' => [
 		'has' => true,
-		'default' => true,
 		// 'version' => '',
 		// 'year' => '2014-2018',
 		// 'name' => '',

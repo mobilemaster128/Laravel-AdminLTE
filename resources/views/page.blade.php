@@ -83,7 +83,7 @@
                         <!-- Control Sidebar Toggle Button -->
                         @hasSection('control-sidebar')
                         <li>
-                            <a href="#" data-toggle="control-sidebar">@yield('control-sidebar-icon')></a>
+                            <a href="#" data-toggle="control-sidebar">@yield('control-sidebar-icon')</a>
                         </li>                        
                         @endif
 
@@ -148,21 +148,20 @@
 
         @if(config('adminlte.footer.has'))
         <footer class="main-footer">
-            @if(config('adminlte.footer.default'))
+            @hasSection('footer')
+            @yield('footer')
+            @else
             <div class="pull-right hidden-xs">
               <b>{{ trans('adminlte::adminlte.version') }}</b> {{ config('adminlte.footer.version', '2.4.0') }}
             </div>
             <strong>{{ trans('adminlte::adminlte.copyright') }} &copy; {{ config('adminlte.footer.year', '2014-2018') }} <a href="{{ config('adminlte.footer.url', env('APP_URL', 'http://localhost')) }}">{{ config('adminlte.footer.name', env('APP_NAME', 'AdminLTE')) }}</a>.</strong> {{ trans('adminlte::adminlte.reserved') }}
-            @else
-            @yield('footer')
             @endif
         </footer>
         @endif
 
         <!-- Control Sidebar -->
-        <!-- Control Sidebar Toggle Button -->
         @hasSection('control-sidebar')
-        <aside class="control-sidebar control-sidebar- . config('adminlte.control_sidebar.skin', 'dark')">
+        <aside class="control-sidebar control-sidebar-{{ config('adminlte.control_sidebar.skin', 'dark') }}">
             @yield('control-sidebar')
         </aside>
         <!-- /.control-sidebar -->
