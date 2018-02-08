@@ -20,4 +20,7 @@ return [
     'reset_password'              => 'Restablecer la contraseña',
     'send_password_reset_link'    => 'Enviar link de restablecimiento de contraseña',
     'online'                      => 'En Línea',
+    'version'                     => 'Versión',
+    'copyright'                   => 'Derechos de autor',
+    'reserved'                    => 'Todos los derechos reservados.',
 ];

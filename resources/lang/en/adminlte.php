@@ -20,4 +20,7 @@ return [
     'reset_password'              => 'Reset Password',
     'send_password_reset_link'    => 'Send Password Reset Link',
     'online'                      => 'Online',
+    'version'                     => 'Version',
+    'copyright'                   => 'Copyright',
+    'reserved'                    => 'All rights reserved.',
 ];

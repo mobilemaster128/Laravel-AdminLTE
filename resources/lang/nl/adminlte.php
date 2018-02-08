@@ -20,4 +20,7 @@ return [
     'reset_password'              => 'Wachtwoord herstellen',
     'send_password_reset_link'    => 'Verzend link voor wachtwoordherstel',
     'online'                      => 'Online',
+    'version'                     => 'Versie',
+    'copyright'                   => 'Auteursrecht',
+    'reserved'                    => 'Alle rechten voorbehouden.',
 ];

@@ -20,4 +20,7 @@ return [
     'reset_password'              => 'Passwort zurücksetzen',
     'send_password_reset_link'    => 'Link zur Passwortwiederherstellung senden',
     'online'                      => 'Online',
+    'version'                     => 'Ausführung',
+    'copyright'                   => 'Urheberrechte',
+    'reserved'                    => 'Alle Rechte vorbehalten.',
 ];

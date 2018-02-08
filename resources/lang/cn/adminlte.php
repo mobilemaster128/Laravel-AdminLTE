@@ -20,4 +20,7 @@ return [
     'reset_password'              => '重置密码',
     'send_password_reset_link'    => '发送密码重置链接',
     'online'                      => '线上',
+    'version'                     => '版本',
+    'copyright'                   => '版权',
+    'reserved'                    => '保留所有权利。',
 ];

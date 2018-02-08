@@ -19,4 +19,7 @@ return [
     'reset_password'              => 'إعادة تعيين كلمة السر',
     'send_password_reset_link'    => 'إرسال رابط إعادة تعيين كلمة السر',
     'online'                      => 'مُتاح',
+    'version'                     => 'الإصدار',
+    'copyright'                   => 'حقوق النشر',
+    'reserved'                    => 'كل الحقوق محفوظة.',
 ];

@@ -57,6 +57,9 @@
                 <div class="navbar-custom-menu">
 
                     <ul class="nav navbar-nav">
+                        <!-- Control Menu -->
+                        @yield('custom-menu')
+
                         <li>
                             @if(config('adminlte.logout_method') == 'GET' || !config('adminlte.logout_method') && version_compare(\Illuminate\Foundation\Application::VERSION, '5.3.0', '<'))
                                 <a href="{{ url(config('adminlte.logout_url', 'auth/logout')) }}">
@@ -76,6 +79,14 @@
                                 </form>
                             @endif
                         </li>
+
+                        <!-- Control Sidebar Toggle Button -->
+                        @hasSection('control-sidebar')
+                        <li>
+                            <a href="#" data-toggle="control-sidebar">@yield('control-sidebar-icon')></a>
+                        </li>                        
+                        @endif
+
                     </ul>
                 </div>
                 @if(config('adminlte.layout') == 'top-nav')
@@ -134,6 +145,30 @@
             @endif
         </div>
         <!-- /.content-wrapper -->
+
+        @if(config('adminlte.footer.has'))
+        <footer class="main-footer">
+            @if(config('adminlte.footer.default'))
+            <div class="pull-right hidden-xs">
+              <b>{{ trans('adminlte::adminlte.version') }}</b> {{ config('adminlte.footer.version', '2.4.0') }}
+            </div>
+            <strong>{{ trans('adminlte::adminlte.copyright') }} &copy; {{ config('adminlte.footer.year', '2014-2018') }} <a href="{{ config('adminlte.footer.url', env('APP_URL', 'http://localhost')) }}">{{ config('adminlte.footer.name', env('APP_NAME', 'AdminLTE')) }}</a>.</strong> {{ trans('adminlte::adminlte.reserved') }}
+            @else
+            @yield('footer')
+            @endif
+        </footer>
+        @endif
+
+        <!-- Control Sidebar -->
+        <!-- Control Sidebar Toggle Button -->
+        @hasSection('control-sidebar')
+        <aside class="control-sidebar control-sidebar- . config('adminlte.control_sidebar.skin', 'dark')">
+            @yield('control-sidebar')
+        </aside>
+        <!-- /.control-sidebar -->
+        <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
+        <div class="control-sidebar-bg"></div>                      
+        @endif
 
     </div>
     <!-- ./wrapper -->

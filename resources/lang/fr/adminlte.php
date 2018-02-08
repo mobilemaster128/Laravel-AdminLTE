@@ -20,4 +20,7 @@ return [
     'reset_password'              => 'Réinitialisation du mot de passe',
     'send_password_reset_link'    => 'Envoi de la réinitialisation du mot de passe',
     'online'                      => 'En ligne',
+    'version'                     => 'Version',
+    'copyright'                   => 'droits d\'auteur',
+    'reserved'                    => 'Tous les droits sont réservés.',
 ];
