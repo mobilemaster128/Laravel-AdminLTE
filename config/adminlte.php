@@ -241,6 +241,10 @@ return [
     |
     */
 
+    'jquery' => true,
+    'bootstrap' => true,
+    'font-awesome' => true,
+
     'plugins' => [
         'datatables' => 'bootstrap', //'datatables', 'none'
         'select2'    => true,
