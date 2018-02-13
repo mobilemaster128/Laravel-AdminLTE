@@ -51,6 +51,7 @@
 
 @if(config('adminlte.jquery'))
 <script src="{{ asset('vendor/adminlte/vendor/jquery/dist/jquery.min.js') }}"></script>
+<script src="{{ asset('vendor/adminlte/vendor/jquery-ui/jquery-ui.min.js') }}"></script>
 @endif
 @if(config('adminlte.bootstrap'))
 <script src="{{ asset('vendor/adminlte/vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
