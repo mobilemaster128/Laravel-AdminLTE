@@ -16,6 +16,10 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{ asset('vendor/adminlte/vendor/font-awesome/css/font-awesome.min.css') }}">
     @endif
+    @if(config('adminlte.jquery'))
+    <!-- jQuery ui -->
+    <link rel="stylesheet" href="{{ asset('vendor/adminlte/vendor/jquery-ui/jquery-ui.min.css') }}">
+    @endif
     <!-- Ionicons -->
     <link rel="stylesheet" href="{{ asset('vendor/adminlte/vendor/Ionicons/css/ionicons.min.css') }}">
 
