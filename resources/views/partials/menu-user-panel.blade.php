@@ -1,6 +1,6 @@
 <div class="pull-left image">
     <img @if (isset(Auth::user()[config('adminlte.avatar_key')])) 
-        src="{{ Storage::url(Auth::user()[config('adminlte.avatar_key')]) }}"
+        src="{{ Auth::user()[config('adminlte.avatar_key')] }}"
         @else 
         src="{{ asset('vendor/adminlte/img/default.png') }}" 
         @endif 
